@@ -1,24 +1,48 @@
 {
+    "$schema":"https://getcomposer.org/schema.json",
     "name": "achertovsky/yii2-debug-cli",
     "description": "Opens CLI scripts for /debug access",
     "type": "yii2-extension",
-    "keywords": ["yii2"," extension"],
-    "version": "@dev",
+    "minimum-stability": "RC",
+    "keywords": ["yii2","extension"],
+    "version": "0.0.1",
     "license": "MIT",
     "authors": [
         {
             "name": "Alexander Zaets",
             "email": "alexzaets.dev@gmail.com"
+        },
+        {
+            "name": "Error500",
+            "email": "error500@error500.ru"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2-debug": "2.1.4",
-        "achertovsky/yii2-json-formatter": "@dev"
+        "yiisoft/yii2": "2.*",
+        "yiisoft/yii2-debug": "~2.1.4"
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }],
+    "extra": {
+        "branch-alias": {
+            "main": "0.0.1-rc5",
+            "dev-master": "0.0.3-rc1",
+            "dev": "develop",
+            "0.0.1": "0.0.1-rc5",
+	    "0.0.2": "0.0.3-rc1"
+        }
     },
     "autoload": {
         "psr-4": {
             "achertovsky\\debug\\": ""
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     }
 }

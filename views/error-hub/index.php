@@ -3,8 +3,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\grid\GridView;
-use achertovsky\formatter\i18n\Formatter;
-
+use yii\helpers\Json;
 /* @var $this yii\web\View */
 /* @var $searchModel achertovsky\debug\models\ErrorHubSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -54,8 +53,7 @@ achertovsky\debug\OverrideAsset::register($this);
                                 if (is_string($result)) {
                                     return $result;
                                 }
-                                $formatter = new Formatter();
-                                return $formatter->asJson($result);
+                                return Json::htmlEncode($result);
                             } catch (\Exception $ex) {
                                 return $model->text;
                             }
@@ -70,8 +68,7 @@ achertovsky\debug\OverrideAsset::register($this);
                                 if (is_string($result)) {
                                     return $result;
                                 }
-                                $formatter = new Formatter();
-                                return $formatter->asJson($result);
+                                return Json::htmlEncode();
                             } catch (\Exception $ex) {
                                 return $model->trace;
                             }
