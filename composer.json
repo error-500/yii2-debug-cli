@@ -1,6 +1,6 @@
 {
     "$schema":"https://getcomposer.org/schema.json",
-    "name": "achertovsky/yii2-debug-cli",
+    "name": "error500/yii2-debug-cli",
     "description": "Opens CLI scripts for /debug access",
     "type": "yii2-extension",
     "minimum-stability": "RC",
