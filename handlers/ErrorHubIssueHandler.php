@@ -1,13 +1,13 @@
 <?php
 
-namespace achertovsky\debug\handlers;
+namespace error500\debug\handlers;
 
 use Yii;
 use yii\helpers\Json;
 use yii\base\BaseObject;
-use achertovsky\debug\Module;
+use error500\debug\Module;
 use yii\base\InvalidConfigException;
-use achertovsky\debug\models\ErrorHub;
+use error500\debug\models\ErrorHub;
 use Exception;
 use yii\web\NotFoundHttpException;
 

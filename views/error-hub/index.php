@@ -5,12 +5,12 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Json;
 /* @var $this yii\web\View */
-/* @var $searchModel achertovsky\debug\models\ErrorHubSearch */
+/* @var $searchModel error500\debug\models\ErrorHubSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Errors Hub';
 $this->params['breadcrumbs'][] = $this->title;
-achertovsky\debug\OverrideAsset::register($this);
+error500\debug\OverrideAsset::register($this);
 
 ?>
 <div class="error-hub-index">

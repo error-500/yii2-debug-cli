@@ -11,7 +11,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $this->title = 'Yii Debugger';
-achertovsky\debug\OverrideAsset::register($this);
+error500\debug\OverrideAsset::register($this);
 
 ?>
 <div class="default-index">

@@ -1,6 +1,6 @@
 <?php
 
-namespace achertovsky\debug;
+namespace error500\debug;
 
 use Yii;
 use yii\web\View;
@@ -20,7 +20,7 @@ class Module extends CoreModule
      * Controller mapping
      * @var array
      */
-    public $controllerNamespace = 'achertovsky\debug\controllers';
+    public $controllerNamespace = 'error500\debug\controllers';
 
     /**
      * @param array $dbProfileLogs
@@ -28,12 +28,12 @@ class Module extends CoreModule
      * In case of components override
      */
     public $dbProfileLogs = [];
-    
+
     public $profilingPanelId = 'profiling';
     public $defaultPanel = 'profiling';
     public $historySize = 10000;
     public $dataPath = '@root/frontend/runtime/debug';
-    
+
     /**
      * {@inheritdoc}
      */
@@ -41,7 +41,7 @@ class Module extends CoreModule
     {
         $logTarget = new $this->logTarget($this);
         $this->logTarget = Yii::$app->getLog()->targets['debug'] = $logTarget;
-        Yii::setAlias('@ach-debug', '@vendor/achertovsky/yii2-debug-cli');
+        Yii::setAlias('@ach-debug', '@vendor/error500/yii2-debug-cli');
 
         /**
          * Parent bootstrap copy-pasted to avoid adding urlmanager rules in CLI
@@ -74,7 +74,7 @@ class Module extends CoreModule
             ], false);
         }
     }
-    
+
     /**
      * Checks if current user is allowed to access the module
      * @return boolean if access is granted
@@ -98,7 +98,7 @@ class Module extends CoreModule
         }
         return false;
     }
-    
+
     /**
      * @return array default set of panels
      */
@@ -109,7 +109,7 @@ class Module extends CoreModule
             'request' => ['class' => 'yii\debug\panels\RequestPanel'],
             'log' => ['class' => 'yii\debug\panels\LogPanel'],
             'profiling' => ['class' => 'yii\debug\panels\ProfilingPanel'],
-            'db' => ['class' => 'achertovsky\debug\panels\DbPanel'],
+            'db' => ['class' => 'error500\debug\panels\DbPanel'],
             'mail' => ['class' => 'yii\debug\panels\MailPanel'],
             'timeline' => ['class' => 'yii\debug\panels\TimelinePanel'],
         ];
@@ -125,7 +125,7 @@ class Module extends CoreModule
 
         return $panels;
     }
-    
+
     /**
      * @inheritdoc
      */
