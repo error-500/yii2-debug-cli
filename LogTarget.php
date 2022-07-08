@@ -1,6 +1,6 @@
 <?php
 
-namespace achertovsky\debug;
+namespace error500\debug;
 
 use Yii;
 use yii\debug\LogTarget as CoreLogTarget;
@@ -43,7 +43,7 @@ class LogTarget extends CoreLogTarget
 
         return $summary;
     }
-    
+
     /**
      * @inheritdoc
      */
@@ -74,7 +74,7 @@ class LogTarget extends CoreLogTarget
         $indexFile = "$path/index.data";
         $this->updateIndexFile($indexFile, $summary);
     }
-    
+
     /**
      * Updates index file with summary log data
      *
@@ -114,7 +114,7 @@ class LogTarget extends CoreLogTarget
             @chmod($indexFile, $this->module->fileMode);
         }
     }
-    
+
     /**
      * Added support of except
      * @inheritdoc

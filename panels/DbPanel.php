@@ -1,6 +1,6 @@
 <?php
 
-namespace achertovsky\debug\panels;
+namespace error500\debug\panels;
 
 use yii\helpers\ArrayHelper;
 use yii\log\Logger;

@@ -1,8 +1,8 @@
 <?php
 
-namespace achertovsky\debug\log;
+namespace error500\debug\log;
 
-use achertovsky\debug\handlers\ErrorHubIssueHandler;
+use error500\debug\handlers\ErrorHubIssueHandler;
 use yii\log\Dispatcher as LogDispatcher;
 use yii\log\Logger;
 

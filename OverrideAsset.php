@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace achertovsky\debug;
+namespace error500\debug;
 
 /**
  * Description of AssetManager

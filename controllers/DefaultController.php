@@ -1,6 +1,6 @@
 <?php
 
-namespace achertovsky\debug\controllers;
+namespace error500\debug\controllers;
 
 use yii\web\NotFoundHttpException;
 use Yii;
@@ -52,7 +52,7 @@ class DefaultController extends \yii\debug\controllers\DefaultController
 
         throw new NotFoundHttpException("Unable to find debug data tagged with '$tag'.");
     }
-    
+
     public function actionActionsSummary()
     {
         $result = [];
@@ -92,7 +92,7 @@ class DefaultController extends \yii\debug\controllers\DefaultController
             ]
         );
     }
-    
+
     /**
      * @param string $tag
      * @return json

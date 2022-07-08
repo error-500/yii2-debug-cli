@@ -1,13 +1,13 @@
 <?php
 
-namespace achertovsky\debug\models;
+namespace error500\debug\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use achertovsky\debug\models\ErrorHub;
+use error500\debug\models\ErrorHub;
 
 /**
- * ErrorHubSearch represents the model behind the search form of `achertovsky\debug\models\ErrorHub`.
+ * ErrorHubSearch represents the model behind the search form of `error500\debug\models\ErrorHub`.
  */
 class ErrorHubSearch extends ErrorHub
 {
