@@ -68,7 +68,7 @@ error500\debug\OverrideAsset::register($this);
                                 if (is_string($result)) {
                                     return $result;
                                 }
-                                return Json::htmlEncode();
+                                return Json::htmlEncode($result);
                             } catch (\Exception $ex) {
                                 return $model->trace;
                             }
