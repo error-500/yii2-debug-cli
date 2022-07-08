@@ -1,15 +1,15 @@
 <?php
 
-namespace achertovsky\debug\controllers;
+namespace error500\debug\controllers;
 
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
-use achertovsky\debug\Module;
+use error500\debug\Module;
 use yii\web\NotFoundHttpException;
 use yii\base\InvalidConfigException;
-use achertovsky\debug\models\ErrorHub;
-use achertovsky\debug\models\ErrorHubSearch;
+use error500\debug\models\ErrorHub;
+use error500\debug\models\ErrorHubSearch;
 
 /**
  * ErrorHubController implements the CRUD actions for ErrorHub model.

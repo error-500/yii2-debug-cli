@@ -2,10 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use achertovsky\formatter\i18n\Formatter;
+use error500\formatter\i18n\Formatter;
 
 /* @var $this yii\web\View */
-/* @var $model achertovsky\debug\models\ErrorHub */
+/* @var $model error500\debug\models\ErrorHub */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Error Hubs', 'url' => ['index']];

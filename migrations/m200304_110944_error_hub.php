@@ -3,7 +3,7 @@
 use yii\di\Instance;
 use yii\db\Migration;
 use yii\db\Connection;
-use achertovsky\debug\Module;
+use error500\debug\Module;
 use yii\base\InvalidConfigException;
 
 /**

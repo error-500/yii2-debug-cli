@@ -1,9 +1,9 @@
 <?php
 
-namespace achertovsky\debug\models;
+namespace error500\debug\models;
 
 use Yii;
-use achertovsky\debug\Module;
+use error500\debug\Module;
 use yii\base\InvalidConfigException;
 
 /**
