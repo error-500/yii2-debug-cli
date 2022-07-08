@@ -5,7 +5,7 @@
     "type": "yii2-extension",
     "minimum-stability": "RC",
     "keywords": ["yii2","extension"],
-    "version": "0.0.1",
+    "version": "0.0.3",
     "license": "MIT",
     "authors": [
         {
@@ -28,16 +28,17 @@
     }],
     "extra": {
         "branch-alias": {
-            "main": "0.0.1-rc5",
-            "dev-master": "0.0.3-rc1",
+            "master": "dev-master",
+            "dev-master": "0.0.3",
             "dev": "develop",
-            "0.0.1": "0.0.1-rc5",
-	    "0.0.2": "0.0.3-rc1"
+            "0.0.1": "0.0.1",
+	        "0.0.2": "0.0.2",
+            "0.0.3": "0.0.3"
         }
     },
     "autoload": {
         "psr-4": {
-            "achertovsky\\debug\\": ""
+            "error500\\debug\\": ""
         }
     },
     "config": {
