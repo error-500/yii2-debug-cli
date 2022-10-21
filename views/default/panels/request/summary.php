@@ -4,7 +4,7 @@
 use yii\helpers\Html;
 use yii\web\Response;
 
-$statusCode = $panel->data['statusCode'];
+$statusCode = $panel->data['statusCode'] ?? 200;
 if ($statusCode === null) {
     $statusCode = 200;
 }
